@@ -2,7 +2,6 @@
   "name": "json-in-html",
   "version": "0.0.0",
   "description": "VSCode extension that supports JSON inside script tags and HTML attributes.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +14,25 @@
   ],
   "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "source.json.embedded",
+        "path": "./syntax/script-json.embedded.json",
+        "injectTo": ["text.html"],
+        "embeddedLanguages": {
+          "meta.embedded.block.json.html": "json"
+        }
+      }
+    ]
+  },
   "bugs": {
     "url": "https://github.com/bahrus/json-in-html/issues"
   },
