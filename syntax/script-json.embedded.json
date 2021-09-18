@@ -11,7 +11,7 @@
   "repository": {
     "script-json-tag": {
       "contentName": "meta.embedded.block.json.html",
-      "begin": "(<)(script)\\b(?=[^>]*type=('application/(ld\\+)?json'|\"application/(ld\\+)?json\"))(?![^/>]*/>\\s*$)",
+      "begin": "(<)(script)\\b(?=[^>]*type=(importmap|'importmap'|\"importmap\"|'application/(ld\\+)?json'|\"application/(ld\\+)?json\"))(?![^/>]*/>\\s*$)",
       "beginCaptures": {
         "1": {
           "name": "punctuation.definition.tag.begin.html"
