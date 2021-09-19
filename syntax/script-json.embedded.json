@@ -58,7 +58,7 @@
           "name": "entity.name.tag.html"
         }
       },
-      "end": "'\\}",
+      "end": "(>)",
       "endCaptures": {
         "1": {
           "name": "punctuation.definition.tag.begin.html"
@@ -76,9 +76,6 @@
         },
         {
           "include": "#attribute-value"
-        },
-        {
-          "include": "#source-json"
         }
       ]
     },
