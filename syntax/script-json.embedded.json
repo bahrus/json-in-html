@@ -6,6 +6,9 @@
   "patterns": [
     {
       "include": "#script-json-tag"
+    },
+    {
+      "include": "#attr-brace-or-bracket"
     }
   ],
   "repository": {
@@ -44,11 +47,6 @@
         }
       ]
     },
-    "attr-brace-or-bracket":{
-      "contentName": "meta.embedded.block.json.html",
-      "begin": "='",
-      "end": "(\\(}')|)"
-    },
     "source-json": {
       "begin": "(>)",
       "beginCaptures": {
@@ -71,6 +69,35 @@
         }
       ]
     },
+    "attr-brace-or-bracket":{
+      "contentName": "meta.embedded.block.json.html",
+      "begin": "='\\{",
+      "end": "\\}'",
+      "patterns":[
+        {
+          "include": "#source-inline-json"
+        }
+      ]
+    },
+    "source-inline-json":{
+      "begin": "(=')",
+      "beginCaptures": {
+        "0": {
+          "name": "meta.tag.metadata.json.start.html"
+        }
+      },
+      "end": "(?='\\s)",
+      "endCaptures": {
+        "0": {
+          "name": "meta.tag.metadata.json.end.html"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.json"
+        }
+      ]
+    },
     "attribute-name": {
       "name": "entity.other.attribute-name.html",
       "match": "\\b([a-zA-Z\\-:_]+)"
@@ -78,10 +105,6 @@
     "attribute-value": {
       "name": "string.quoted.double.html",
       "match": "(\"|').*?(\"|')"
-    },
-    "single-attribute-value":{
-      "name": "string.quoted.single.html",
-      "match": "(').*?(')"
     }
   }
 }
