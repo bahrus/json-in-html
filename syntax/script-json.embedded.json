@@ -92,7 +92,12 @@
           "name": "meta.tag.metadata.json.start.html"
         },
         "2":{
-          "name": "temp3"
+          "name": "meta.embedded.block.json.html",
+          "patterns": [
+            {
+              "include": "source.json"
+            }  
+          ]
         },
         "3": {
           "name": "meta.tag.metadata.json.end.html"
@@ -100,7 +105,9 @@
       },
       "name": "bruce.was.here",
       "patterns":[
-        
+        {
+          "include": "source.json"
+        }        
       ]
     },
     "source-inline-json":{
