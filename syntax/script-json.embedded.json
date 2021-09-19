@@ -50,26 +50,15 @@
     "attr-brace-or-bracket":{
       "contentName": "meta.embedded.block.json.html",
       "begin": "='\\{",
-      "beginCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.begin.html"
-        },
-        "2": {
-          "name": "entity.name.tag.html"
-        }
-      },
-      "end": "(>)",
-      "endCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.begin.html"
-        },
-        "2": {
-          "name": "entity.name.tag.html"
-        },
-        "3": {
-          "name": "punctuation.definition.tag.end.html"
-        }
-      },
+			"captures": {
+				"1": {
+					"name": "entity.other.attribute-name.id.html"
+				},
+				"2": {
+					"name": "punctuation.separator.key-value.html"
+				}
+			},
+      "end": "(?!\\G)(?<='|\"|[^\\s<>/])",
       "patterns": [
         {
           "include": "#attribute-name"
