@@ -6,6 +6,9 @@
   "patterns": [
     {
       "include": "#script-json-tag"
+    },
+    {
+      "include": "#attr-brace-or-bracket"
     }
   ],
   "repository": {
@@ -43,6 +46,9 @@
           "include": "#source-json"
         }
       ]
+    },
+    "attr-brace-or-bracket":{
+      "contentName": "meta.embedded.block.json.html"
     },
     "source-json": {
       "begin": "(>)",
