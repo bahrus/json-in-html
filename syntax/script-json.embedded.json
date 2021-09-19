@@ -6,9 +6,6 @@
   "patterns": [
     {
       "include": "#script-json-tag"
-    },
-    {
-      "include": "#attr-brace-or-bracket"
     }
   ],
   "repository": {
@@ -49,7 +46,7 @@
     },
     "attr-brace-or-bracket":{
       "contentName": "meta.embedded.block.json.html",
-      "begin": "='\\{",
+      "begin": "='",
       "end": "(\\(}')|)"
     },
     "source-json": {
