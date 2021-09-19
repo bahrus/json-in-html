@@ -58,7 +58,7 @@
 					"name": "punctuation.separator.key-value.html"
 				}
 			},
-      "end": "(?!\\G)(?<='|\"|[^\\s<>/])",
+      "end": "('|\")",
       "patterns": [
         {
           "include": "#attribute-name"
