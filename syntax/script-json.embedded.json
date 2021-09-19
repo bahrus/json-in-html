@@ -50,23 +50,7 @@
     "attr-brace-or-bracket":{
       "contentName": "meta.embedded.block.json.html",
       "begin": "='\\{",
-			"captures": {
-				"1": {
-					"name": "entity.other.attribute-name.id.html"
-				},
-				"2": {
-					"name": "punctuation.separator.key-value.html"
-				}
-			},
-      "end": "('|\")",
-      "patterns": [
-        {
-          "include": "#attribute-name"
-        },
-        {
-          "include": "#attribute-value"
-        }
-      ]
+      "end": "(\\(}')|)"
     },
     "source-json": {
       "begin": "(>)",
@@ -97,6 +81,10 @@
     "attribute-value": {
       "name": "string.quoted.double.html",
       "match": "(\"|').*?(\"|')"
+    },
+    "single-attribute-value":{
+      "name": "string.quoted.single.html",
+      "match": "(').*?(')"
     }
   }
 }
