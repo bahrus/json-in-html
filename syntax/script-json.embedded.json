@@ -71,18 +71,22 @@
     },
     "attr-brace-or-bracket":{
       "contentName": "meta.embedded.block.json.html",
-      "begin": "(\\w+)='",
+      "begin": "(\\w+)(=)'",
       "beginCaptures": {
         "0": {
+          "name": "temp"
+        },
+        "1":{
           "name": "entity.other.attribute-name.html"
+        },
+        "2": {
+          "name": "punctuation.separator.key-value.html"
         }
       },
       "end": "'",
       "name": "bruce.was.here",
       "patterns":[
-        {
-          "include": "#source-inline-json"
-        }
+        
       ]
     },
     "source-inline-json":{
