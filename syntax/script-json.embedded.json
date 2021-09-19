@@ -71,7 +71,12 @@
     },
     "attr-brace-or-bracket":{
       "contentName": "meta.embedded.block.json.html",
-      "begin": "attr='",
+      "begin": "(\\w+)='",
+      "beginCaptures": {
+        "0": {
+          "name": "Dali.was.here"
+        }
+      },
       "end": "'",
       "name": "bruce.was.here",
       "patterns":[
