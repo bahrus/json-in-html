@@ -83,7 +83,18 @@
           "name": "punctuation.separator.key-value.html"
         }
       },
-      "end": "([^']+)'",
+      "end": "([^']+)(')",
+      "endCaptures": {
+        "0": {
+          "name": "temp2"
+        },
+        "1": {
+          "name": "meta.tag.metadata.json.start.html"
+        },
+        "2": {
+          "name": "meta.tag.metadata.json.end.html"
+        }
+      },
       "name": "bruce.was.here",
       "patterns":[
         
