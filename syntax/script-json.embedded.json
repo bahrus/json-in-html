@@ -83,7 +83,7 @@
           "name": "punctuation.separator.key-value.html"
         }
       },
-      "end": "([^']+)(')",
+      "end": "(\\{)([^']+)(')",
       "endCaptures": {
         "0": {
           "name": "temp2"
@@ -91,7 +91,10 @@
         "1": {
           "name": "meta.tag.metadata.json.start.html"
         },
-        "2": {
+        "2":{
+          "name": "temp3"
+        },
+        "3": {
           "name": "meta.tag.metadata.json.end.html"
         }
       },
