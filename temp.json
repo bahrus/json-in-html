@@ -1,0 +1,92 @@
+{
+    "begin": "style(?![\\w:-])",
+    "beginCaptures": {
+        "0": {
+            "name": "entity.other.attribute-name.html"
+        }
+    },
+    "comment": "HTML5 style attribute",
+    "end": "(?=\\s*+[^=\\s])",
+    "name": "meta.attribute.style.html",
+    "patterns": [
+        {
+            "begin": "=",
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.separator.key-value.html"
+                }
+            },
+            "end": "(?<=[^\\s=])(?!\\s*=)|(?=/?>)",
+            "patterns": [
+                {
+                    "begin": "(?=[^\\s=<>`/]|/(?!>))",
+                    "end": "(?!\\G)",
+                    "name": "meta.embedded.line.css",
+                    "patterns": [
+                        {
+                            "captures": {
+                                "0": {
+                                    "name": "source.css"
+                                }
+                            },
+                            "match": "([^\\s\"'=<>`/]|/(?!>))+",
+                            "name": "string.unquoted.html"
+                        },
+                        {
+                            "begin": "\"",
+                            "beginCaptures": {
+                                "0": {
+                                    "name": "punctuation.definition.string.begin.html"
+                                }
+                            },
+                            "contentName": "source.css",
+                            "end": "(\")",
+                            "endCaptures": {
+                                "0": {
+                                    "name": "punctuation.definition.string.end.html"
+                                },
+                                "1": {
+                                    "name": "source.css-ignored-vscode"
+                                }
+                            },
+                            "name": "string.quoted.double.html",
+                            "patterns": [
+                                {
+                                    "include": "#entities"
+                                }
+                            ]
+                        },
+                        {
+                            "begin": "'",
+                            "beginCaptures": {
+                                "0": {
+                                    "name": "punctuation.definition.string.begin.html"
+                                }
+                            },
+                            "contentName": "source.css",
+                            "end": "(')",
+                            "endCaptures": {
+                                "0": {
+                                    "name": "punctuation.definition.string.end.html"
+                                },
+                                "1": {
+                                    "name": "source.css-ignored-vscode"
+                                }
+                            },
+                            "name": "string.quoted.single.html",
+                            "patterns": [
+                                {
+                                    "include": "#entities"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "match": "=",
+                    "name": "invalid.illegal.unexpected-equals-sign.html"
+                }
+            ]
+        }
+    ]
+}

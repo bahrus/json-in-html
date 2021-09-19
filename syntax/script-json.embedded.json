@@ -71,8 +71,9 @@
     },
     "attr-brace-or-bracket":{
       "contentName": "meta.embedded.block.json.html",
-      "begin": "='\\{",
-      "end": "\\}'",
+      "begin": "attr='",
+      "end": "'",
+      "name": "bruce.was.here",
       "patterns":[
         {
           "include": "#source-inline-json"
