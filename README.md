@@ -1,12 +1,21 @@
 # JSON-in-HTML Syntax Support
 
-Syntax highlighting support for HTML `<script></script>` tags using `type=application/json` and `type=application/ld+json` and `type=importmap` attributes.
+This VSCode extension provides syntax highlighting support for HTML:
 
-Any script tag containing "json" in the type attribute, as well as any attribute that starts with '{ or '[ (hopefully).
+First, extends [this great extension](https://github.com/panoply/vscode-json-script-tag), and supports two addition script types:
 
-And import maps.
+`<script></script>` tags using 
 
-Acknowledgements:  This owes a huge amount of debt to [this great extension](https://github.com/panoply/vscode-json-script-tag).
+1.  `type=application/json` or
+2.  `type=application/ld+json` or
+3.  `type=json` or 
+4.  `type=importmap` attributes.
+
+will provide JSON editing capabilities inside the script tags.
+
+In addition, json-in-html supports editing json within html tag attributes.
+
+This is helpful for web components, which often make heavy use of JSON-serialize attributes.
 
 ## Examples
 
@@ -58,4 +67,8 @@ Acknowledgements:  This owes a huge amount of debt to [this great extension](htt
 <script type=json>
     /* JSON HERE */
 </script>
+
+<div attr='
+  {"x": "hello"}
+'></div>
 ```
