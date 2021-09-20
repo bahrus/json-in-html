@@ -1,6 +1,6 @@
 {
   "name": "json-in-html",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "VSCode extension that supports JSON inside script tags and HTML attributes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +27,9 @@
       {
         "scopeName": "source.json.embedded",
         "path": "./syntax/script-json.embedded.json",
-        "injectTo": ["text.html"],
+        "injectTo": [
+          "text.html"
+        ],
         "embeddedLanguages": {
           "meta.embedded.block.json.html": "json"
         }
