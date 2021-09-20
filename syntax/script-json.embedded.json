@@ -83,7 +83,7 @@
           "name": "punctuation.separator.key-value.html"
         }
       },
-      "end": "(?=')",
+      "end": "(?:')",
       "endCaptures": {
         "0": {
           "name": "temp2"
