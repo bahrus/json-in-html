@@ -37,7 +37,9 @@
         "scopeName": "source.json.embedded",
         "path": "./syntax/script-json.embedded.json",
         "injectTo": [
-          "text.html"
+          "text.html",
+          "source.ts",
+          "source.js"
         ],
         "embeddedLanguages": {
           "meta.embedded.block.json.html": "json"
