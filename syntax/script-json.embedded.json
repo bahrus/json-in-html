@@ -117,7 +117,7 @@
           "name": "meta.tag.metadata.json.start.html"
         }
       },
-      "end": "(?='\\s)",
+      "end": "(?=')",
       "endCaptures": {
         "0": {
           "name": "meta.tag.metadata.json.end.html"
