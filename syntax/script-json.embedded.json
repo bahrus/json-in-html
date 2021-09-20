@@ -71,7 +71,7 @@
     },
     "attr-brace-or-bracket":{
       "contentName": "meta.embedded.block.json.html",
-      "begin": "(\\w+)(=)'",
+      "begin": "([-\\w]+)(=)'",
       "beginCaptures": {
         "1":{
           "name": "entity.other.attribute-name.html"
