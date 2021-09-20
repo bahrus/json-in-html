@@ -1,6 +1,6 @@
 {
   "name": "json-in-html",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "VSCode extension that supports JSON inside script tags and HTML attributes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
