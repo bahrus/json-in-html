@@ -1,3 +1,5 @@
+[![Install](https://img.shields.io/badge/vscode-install-blue.svg)](https://marketplace.visualstudio.com/items?itemName=andersonbruceb.json-in-html)
+
 # JSON-in-HTML Syntax Support
 
 This VSCode extension provides syntax highlighting support for HTML:

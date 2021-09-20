@@ -73,9 +73,6 @@
       "contentName": "meta.embedded.block.json.html",
       "begin": "(\\w+)(=)'",
       "beginCaptures": {
-        "0": {
-          "name": "temp"
-        },
         "1":{
           "name": "entity.other.attribute-name.html"
         },
@@ -103,7 +100,7 @@
           "name": "meta.tag.metadata.json.end.html"
         }
       },
-      "name": "bruce.was.here",
+      "name": "attr.brace.or.bracket",
       "patterns":[
         {
           "include": "source.json"
