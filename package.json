@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/bahrus/json-in-html.git"
   },
+  "icon": "images/json-in-html.png",
   "keywords": [
     "web-components",
     "import-maps",
