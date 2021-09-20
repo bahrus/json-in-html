@@ -11,7 +11,16 @@
     "url": "git+https://github.com/bahrus/json-in-html.git"
   },
   "keywords": [
-    "web-components"
+    "web-components",
+    "import-maps",
+    "web components",
+    "custom-elements",
+    "custom elements",
+    "import maps",
+    "json",
+    "json-in-html",
+    "import map",
+    "import-map"
   ],
   "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
