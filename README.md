@@ -2,9 +2,9 @@
 
 # JSON-in-HTML Syntax Support
 
-This VSCode extension provides syntax highlighting support for HTML:
+This VSCode extension provides syntax highlighting support for JSON inside HTML.
 
-First, extends [this great extension](https://github.com/panoply/vscode-json-script-tag), and supports two addition script types:
+First, it extends [this great extension](https://github.com/panoply/vscode-json-script-tag), and supports two additional script types:
 
 `<script></script>` tags using 
 
@@ -17,7 +17,7 @@ will provide JSON editing capabilities inside the script tags.
 
 In addition, json-in-html supports editing json within html tag attributes.
 
-This is helpful for web components, which often make heavy use of JSON-serialize attributes.
+This is helpful for web components, which often make heavy use of JSON-serialized attributes.
 
 ## Examples
 
